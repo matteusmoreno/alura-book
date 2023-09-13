@@ -6,3 +6,48 @@ hr {
     background-color: var(--branco);
     padding: 1em;
 }
+
+
+.rodape__educacao,
+.rodape__educacao-online,
+.rodape__comunidade {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .rodape {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+    }
+
+    .rodape__educacao,
+    .rodape__educacao-online,
+    .rodape__comunidade {
+    display: block;
+}
+
+    .rodape__texto {
+        font-size: 24px;
+    }
+
+    .rodape__educacao-texto {
+        color: var(--cinza);
+        font-size: 14px; 
+        font-weight: 400; 
+        text-transform: uppercase;
+        padding-bottom: 25px;
+
+    }
+
+    .educacao__lista-item {
+        display: flex;
+        align-items: center;
+        color: var(--cinza);
+        margin-bottom: 1em;
+        font-size: 14px; 
+        gap: 0.8em;
+    }
+}
